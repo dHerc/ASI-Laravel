@@ -1,0 +1,241 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.dark-mode body {
+    background-color: #1a202c;
+    color: white;
+}
+
+.dark-mode a:visited {
+    color: unset;
+}
+
+.change-mode-dark, .change-mode-light {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    font-size: xxx-large;
+    background-color: unset;
+    border: unset;
+}
+
+:not(.dark-mode) > body > .change-mode-light {
+    display: none;
+}
+
+.dark-mode > body > .change-mode-dark {
+    display: none;
+}
+
+.change-mode-light {
+    color: white;
+}
+
+.main-nav {
+    z-index: 1000;
+    background-color: white;
+    padding: 10px 0 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+}
+
+.dark-mode .main-nav {
+    background-color: #1a202c;
+    color: white;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-nav li {
+    float: left;
+}
+
+.main-nav li a {
+    display: block;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dark-mode .main-nav li a {
+    background-color: #1a202c;
+    color: white;
+}
+
+.main-nav li a:hover {
+    background-color: #d4d4d4;
+}
+
+.main-nav .selected a {
+    border-bottom: 2px solid rgb(128, 128, 128);
+}
+
+.dark-mode .main-nav .selected a {
+    border-bottom: 2px solid white;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dark-mode .main-container {
+    background-color: #1a202c;
+}
+
+.dark-mode.main-container {
+    background-color: black;
+}
+
+.main-container > div {
+    background-color: inherit;
+    width: fit-content;
+    min-width: 50vw;
+}
+
+.subcontainer {
+    padding: 10px;
+    -webkit-box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+}
+
+.comments-subcontainer {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    -webkit-box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 15px 2px rgba(66, 68, 90, 1);
+    display: block;
+    text-decoration: none;
+    color: unset;
+}
+
+.comments-subcontainer:hover {
+    background-color: #d4d4d4;
+}
+
+.comments-link {
+    padding-left: 10px;
+}
+
+.back-to-top {
+    position: fixed;
+    background-color: #00000000;
+    border: none;
+    font-size: xxx-large;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+
+.dark-mode .back-to-top {
+    color: white;
+}
+
+.comment-container {
+    max-width: 80vw;
+}
+
+.comment-item-container {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid black;
+    -webkit-box-shadow: 0 0 10px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 10px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 10px 1px rgba(66, 68, 90, 1);
+}
+
+.dark-mode .comment-item-container {
+    border-color: white;
+}
+
+.comment-item-container:nth-child(even) {
+    border-radius: 20px 20px 0 20px;
+}
+
+.comment-item-container:nth-child(odd) {
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 20px 20px 20px 0;
+}
+
+.comment-item-container > p {
+    margin: 0;
+    padding: 2px;
+    border-top: 1px solid black;
+}
+
+.dark-mode .comment-item-container > p {
+    border-color: white;
+}
+
+.error-container {
+    color: red;
+}
+
+input, textarea {
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 3px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 3px 1px rgba(66, 68, 90, 1);
+}
+
+.dark-mode input, .dark-mode textarea {
+    background-color: #1a202c;
+    color: white;
+}
+
+.add-comment-button {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 5px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 5px 1px rgba(66, 68, 90, 1);
+}
+
+.dark-mode .add-comment-button {
+    background-color: #1a202c;
+    color: white;
+    border-color: white;
+}
+
+.add-comment-button:hover {
+    background-color: #d4d4d4;
+}
+
+@media screen and (min-height: 450px) {
+    .main-nav, .nav-shadow {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .main-container {
+        padding-top: 70px;
+    }
+}

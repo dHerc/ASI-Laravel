@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O projekcie</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<button onclick="setLightMode()" class="change-mode-light" title="Wybierz tryb jasny">☼</button>
+<button onclick="setDarkMode()" class="change-mode-dark" title="Wybierz tryb ciemny">◑</button>
+<nav style="height: 50px" class="main-nav">
+    <ul>
+        <li><a href="index.html">Główna strona</a></li>
+        <li class="selected"><a href="about.html">O projekcie</a></li>
+    </ul>
+</nav>
+<button onclick="topFunction()" class="back-to-top" title="Wróć na początek">^</button>
+<div class="main-container">
+    <div>
+        <article class="subcontainer">
+            <h1>Użyte technologie</h1>
+            <ul>
+                <li>
+                    <h2>HTML 5</h2>
+                    <p>
+                        Strona wykorzystuje tagi dodane do HTML-a w wersji 5, takie jak nav czy article. <br>
+                        Dodatkowo w celu zapisania preferencji użytkownika co do trybu ciemnego użyte zostało localStorage wprowadzone w tej samej wersji HTML-a
+                    </p>
+                </li>
+                <li>
+                    <h2>CSS 3</h2>
+                    <p>
+                        Strona wykorzystuje elementy stylów dodane do CSS w wersji 3 takie jak box-shadow czy selektor nth-child
+                    </p>
+                </li>
+                <li>
+                    <h2>PHP</h2>
+                    <p>
+                        Strona wykorzystuje skrypty PHP w celu generowania listy komentarzy na podstawie informacji z bazy danych oraz dodawania nowych komentarzy z bazy danych
+                    </p>
+                </li>
+                <li>
+                    <h2>Laravel</h2>
+                    <p>
+                        Framework ten został użyty w celu ułatwienia obsługi zapytań, generowania strony z komentarzami oraz obsługi bazy danych, decyzja ta pozwala również na łatwe rozszerzenie serwisu o dodatkowe funkcjonalności
+                    </p>
+                </li>
+            </ul>
+            <h2>Założenia nawigacji</h2>
+            <p>
+                Wszystkie główne podstrony dostępne są z poziomu paska nawigacji, co daje łatwy dostęp do dowolnej strony w dowolnym momencie, w wypadku stron zawierających dużo tekstu użytkownik ma możliwość powrotu na samą górę klikając jeden przycisk
+            </p>
+            <h2>Spełnienie wymagań</h2>
+            <ul>
+                <li>
+                    <h2>Użyte technologie</h2>
+                    <p>
+                        Zgodnie z założeniami strona używa HTML 5, CSS 3, skryptów PHP po stronie serwera oraz bazy danych
+                    </p>
+                    <h2>Poprawność HTML/CSS</h2>
+                    <p>
+                        Pliki html oraz css sprawdzane były walidatorem, który nie zwrócił żadnych błędów
+                    </p>
+                    <h2>Kompatybilność</h2>
+                    <p>
+                        Strona używa podstawowych elementów dostarczanych przez HTML 5 oraz CSS 3, została zaprojektowana w taki sposób aby ewentualne problemy z wyświetlaniem strony nie uniemożliwiały korzystania z niej, żaden ze skryptów JavaScript nie jest niezbędny do korzystania z serwisu, strona z komentarzami jest dynamicznie renderowana po stronie serwera, co sprawia, że jest ona niezależna od obsługi skryptów po stronie przeglądarki
+                    </p>
+                    <h2>Strona poświęcona opisowi serwisu</h2>
+                    <p>
+                        Ta strona poświęcona jest opisowi całego serwisu
+                    </p>
+                    <h2>Dostępność dla niepełnosprawnych</h2>
+                    <p>
+                        Wszystkie obrazki mają teksty alternatywne, odpowiednie części strony używają odpowiednio dobranych tagów tak aby ułatwić używanie strony przez osoby niepełnosprawne, wtyczka <a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=pl">Lighthouse</a> dla wszystkich stron zwraca wynik 100 (maksimum) w sekcji Accessibility
+                    </p>
+                </li>
+            </ul>
+        </article>
+        <div>
+            <a class="comments-subcontainer" href="about/comments">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-right" viewBox="0 0 16 16" style="vertical-align: middle">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                </svg>
+                Komentarze
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
