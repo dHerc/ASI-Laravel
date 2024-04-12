@@ -343,6 +343,60 @@ input, textarea {
     background-color: #d4d4d4;
 }
 
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-container a {
+    text-decoration: none;
+    color: blue;
+}
+
+.dark-mode .pagination-container a {
+    color: white;
+}
+
+.pagination-pages-container {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-pages-subcontainer {
+    overflow: clip;
+    max-width: 40%;
+    white-space: nowrap;
+}
+
+.pagination-pages-container a {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    margin: 1px;
+    border-radius: 5px;
+    color: blue;
+    -webkit-box-shadow: 0 0 1px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 1px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 1px 1px rgba(66, 68, 90, 1);
+}
+
+.dark-mode .pagination-pages-container a {
+    color: white;
+}
+
+.current-page-link {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black !important;
+    border-bottom: 3px solid rgb(128, 128, 128);
+}
+
+.dark-mode .current-page-link {
+    color: #4a5568 !important;
+}
+
 @media screen and (max-width: 700px) {
     .main-container > div {
         max-width: min(100vw, 500px);

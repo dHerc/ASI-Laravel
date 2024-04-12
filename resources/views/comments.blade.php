@@ -53,6 +53,31 @@
             </div>
         @endforeach
         </div>
+        @if($comments->hasPages())
+        <div class="pagination-container">
+            @if(!$comments->onFirstPage()) <a href="{{$comments->previousPageUrl()}}" title="Poprzednia strona">&lt;&nbsp;nowsze</a>
+            @else <a href="{{$comments->url($comments->currentPage())}}" style="visibility: hidden"></a>
+            @endif
+            <div class="pagination-pages-container">
+                <div class="pagination-pages-subcontainer">
+                    <div style="float: right">
+                        @for($page = 1; $page < $comments->currentPage(); $page++)
+                        <a href="{{$comments->url($page)}}">{{$page}}</a>
+                        @endfor
+                    </div>
+                </div>
+                <a href="{{$comments->url($comments->currentPage())}}" class="current-page-link">{{$comments->currentPage()}}</a>
+                <div class="pagination-pages-subcontainer">
+                    @for($page = $comments->currentPage() + 1; $page <= $comments->lastPage(); $page++)
+                    <a href="{{$comments->url($page)}}">{{$page}}</a>
+                    @endfor
+                </div>
+            </div>
+            @if($comments->hasMorePages()) <a href="{{$comments->nextPageUrl()}}" title="Następna strona">starsze&nbsp;&gt;</a>
+            @else <a href="{{$comments->url($comments->currentPage())}}" style="visibility: hidden"></a>
+            @endif
+        </div>
+        @endif
     </div>
 </div>
 </body>
