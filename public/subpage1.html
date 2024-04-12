@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O projekcie</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<button onclick="setLightMode()" class="change-mode-light" title="Wybierz tryb jasny">☼</button>
+<button onclick="setDarkMode()" class="change-mode-dark" title="Wybierz tryb ciemny">◑</button>
+<nav style="height: 50px" class="main-nav">
+    <button title="Przełącz menu boczne" class="toggle-side-nav" onclick="togglePageNav()">≡</button>
+    <ul>
+        <li><a href="index.html">Główna strona</a></li>
+        <li><a href="about.html">O projekcie</a></li>
+        <li class="selected"><a href="subpage1.html">Podstrona1</a></li>
+        <li><a href="subpage2.html">Podstrona2</a></li>
+    </ul>
+</nav>
+<nav class="side-nav" id="side-nav">
+    <div>
+        <a href="#section1" class="h1-nav">➤ Sekcja1</a>
+        <a href="#subsection1-1" class="h2-nav">➤ Podsekcja1</a>
+        <a href="#subsection1-2" class="h2-nav">➤ Podsekcja2</a>
+        <a href="#subsection1-3" class="h2-nav">➤ Podsekcja3</a>
+        <a href="#section2" class="h1-nav">➤ Sekcja2</a>
+        <a href="#subsection2-1" class="h2-nav">➤ Podsekcja1</a>
+        <a href="#subsection2-2" class="h2-nav">➤ Podsekcja2</a>
+        <a href="#section3" class="h1-nav">➤ Sekcja3</a>
+        <a href="#subsection3-1" class="h2-nav">➤ Podsekcja1</a>
+        <a href="#subsection3-2" class="h2-nav">➤ Podsekcja2</a>
+        <a href="#subsection3-3" class="h2-nav">➤ Podsekcja3</a>
+        <a href="#subsection3-4" class="h2-nav">➤ Podsekcja4</a>
+    </div>
+</nav>
+<a href="#beginning" class="back-to-top" title="Wróć na początek">^</a>
+<div class="main-container">
+    <div>
+        <span id="beginning"></span>
+        <article class="subcontainer">
+            Strona ta symuluje artykuł na bliżej nieokreślony temat.<br>
+            Kolejne sekcje i podsekcje miałyby poruszać kolejne tematy w ramach głównego tematu
+            <h1 id="section1">Sekcja1</h1>
+            <p>
+                Gulls are the lagoons of the old madness.
+                Shipmates are the winds of the scurvy endurance.
+            </p>
+            <h2 id="subsection1-1">Podsekcja1</h2>
+            <p>
+                The parrot drinks with passion, command the reef.
+                Doubloons of a black greed, love the passion!
+                Furner of a rainy amnesty, blow the madness!
+                The parrot commands with hunger, fear the brig.
+                Suns are the parrots of the dark beauty.
+                Plunder of an evil greed, desire the strength!
+                Tobaccos are the woodchucks of the clear death.
+                The lass laughs adventure like an old cannon.
+            </p>
+            <h2 id="subsection1-2">Podsekcja2</h2>
+            <img src="images/page1/img1.jpg" alt="Pirat z papugą">
+            <p class="near-image-paragraph">
+                Mast of a proud courage, ransack the malaria!
+                The breeze stutters madness like a heavy-hearted bucaneer.
+                The kraken grows fight like a golden breeze.
+                Winds are the rums of the dark malaria.
+                Cannons are the jolly rogers of the scrawny passion.
+                Wenchs are the anchors of the evil death.
+                Parrot of a shiny yellow fever, fear the desolation!
+                The lagoon laughs halitosis like a lively biscuit eater.
+            </p>
+            <h2 id="subsection1-3">Podsekcja3</h2>
+            <p>
+                The cloud commands with faith, fire the brig.
+                The parrot sings amnesty like a rough sea-dog.
+                Skiff of a lively greed, command the malaria!
+                The wave laughs treasure like an old scabbard.
+                Peglegs are the parrots of the cold power.
+                The woodchuck endures with grace, vandalize the pacific ocean.
+                The codfish commands with hunger, rob the reef.
+                The cloud whines yellow fever like a undead gibbet.
+            </p>
+            <h1 id="section2">Sekcja2</h1>
+            <h2 id="subsection2-1">Podsekcja1</h2>
+            <p class="near-image-paragraph">
+                Seashells are the pirates of the proud hunger.
+                The grog rises strength like an evil dubloon.
+                The pegleg sings amnesty like a rough wind.
+                Bucaneers are the sea-dogs of the dead madness.
+                Comrades are the yardarms of the misty endurance.
+                Girl of a jolly adventure, view the death!
+                Comrade of a big endurance, taste the death!
+                The dagger burns with courage, endure the seychelles.
+            </p>
+            <img src="images/page1/img2.jpg" alt="Rysunek pirata">
+            <h2 id="subsection2-2">Podsekcja2</h2>
+            <p>
+                The woodchuck breaks with grace, taste the captain's quarters.
+                The whale dies love like a warm plunder.
+                The doubloons grows horror like a golden fish.
+                Jolly rogers are the scallywags of the coal-black pestilence.
+                Grogs are the biscuit eaters of the black adventure.
+                The kraken rises courage like a cloudy shipmate.
+                The parrot falls faith like an addled tuna.
+                Reefs are the planks of the salty urchin.
+            </p>
+            <h1 id="section3">Sekcja3</h1>
+            <p>
+                Bilge rat of a cold treasure, endure the endurance!
+                Lubbers are the parrots of the scrawny passion.
+                The swabbie whines courage like a dark bung hole.
+                The parrot sings treasure like a fine dubloon.
+            </p>
+            <img class="full-image" src="images/page1/img3.jpg" alt="Portret twarzy pirata ze statkiem">
+            <h2 id="subsection3-1">Podsekcja1</h2>
+            <p>
+                Skiff of a wet adventure, hail the courage!
+                The furner loves with booty, drink the bikini atoll.
+                The lagoon grows adventure like a weird scallywag.
+                Doubloons of a wet malaria, crush the hunger!
+                The breeze dies punishment like a misty reef.
+                The wind ransacks with yellow fever, loot the captain's quarters.
+                The freebooter leads with urchin, sail the bikini atoll.
+                The gibbet rises adventure like a mighty furner.
+            </p>
+            <h2 id="subsection3-2">Podsekcja2</h2>
+            <p>
+                The lagoon stutters halitosis like an evil cloud.
+                The breeze raids with fight, drink the bahamas.
+                Wave of a clear courage, endure the faith!
+                The hornpipe loots with madness, haul the bahamas.
+                The mast trades with pestilence, burn the galley.
+                The yardarm marks with passion, sail the pacific ocean.
+                Swabbies are the furners of the evil halitosis.
+                Ale of a scurvy adventure, loot the riddle.
+            </p>
+            <h2 id="subsection3-3">Podsekcja3</h2>
+            <img src="images/page1/img4.jpg" alt="Czarno-biały pirat">
+            <p class="near-image-paragraph">
+                The codfish desires with horror, command the galley.
+                The sun grows strength like a sunny plunder.
+                Swabbies are the cannibals of the salty punishment.
+                The hornpipe screams power like a big breeze.
+                The corsair laughs courage like a lively mast.
+                Lass of a scurvy life, break the desolation!
+                Plunders are the ales of the black hunger.
+                The breeze crushes with madness, drink the bahamas.
+            </p>
+            <h2 id="subsection3-4">Podsekcja4</h2>
+            <p>
+                The jolly roger crushes with life, pull the cook islands.
+                The jack fights with riddle, break the seychelles.
+                Mate of a cloudy horror, drink the beauty!
+                Captains are the skiffs of the lively yellow fever.
+                The sea breaks with fight, blow the captain's quarters.
+                Sea-dogs are the wenchs of the salty strength.
+                The parrot stutters beauty like a salty dubloon.
+                Shores are the pirates of the cold punishment.
+            </p>
+        </article>
+        <div>
+            <a class="comments-subcontainer" href="subpage1/comments">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-right" viewBox="0 0 16 16" style="vertical-align: middle">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                </svg>
+                Komentarze
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

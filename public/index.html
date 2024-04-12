@@ -11,85 +11,43 @@
 <button onclick="setLightMode()" class="change-mode-light" title="Wybierz tryb jasny">☼</button>
 <button onclick="setDarkMode()" class="change-mode-dark" title="Wybierz tryb ciemny">◑</button>
 <nav style="height: 50px" class="main-nav">
+    <button title="Przełącz menu boczne" class="toggle-side-nav" onclick="togglePageNav()">≡</button>
     <ul>
         <li class="selected"><a href="index.html">Główna strona</a></li>
         <li><a href="about.html">O projekcie</a></li>
+        <li><a href="subpage1.html">Podstrona1</a></li>
+        <li><a href="subpage2.html">Podstrona2</a></li>
     </ul>
 </nav>
-<button onclick="topFunction()" class="back-to-top" title="Wróć na początek">^</button>
+<nav class="side-nav" id="side-nav">
+    <div>
+        <a href="#description" class="h1-nav">➤ Opis strony</a>
+        <a href="#pages" class="h1-nav">➤ Dostępne strony</a>
+        <a href="#about" class="h2-nav">➤ O projekcie</a>
+        <a href="#subpage1" class="h2-nav">➤ Podstrona1</a>
+        <a href="#subpage2" class="h2-nav">➤ Podstrona2</a>
+    </div>
+</nav>
+<a href="#beginning" class="back-to-top" title="Wróć na początek">^</a>
 <div class="main-container">
     <div>
+        <span id="beginning"></span>
         <article class="subcontainer">
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
-            sadas1<br>
-            sadas2<br>
-            sadas3<br>
-            sadas4<br>
-            sadas5<br>
-            sadas6<br>
-            sadas7<br>
-            sadas8<br>
-            sadas9<br>
-            sadas10<br>
+            <h1 id="description">Opis strony</h1>
+            <p>
+                Strona ta ma przedstawiać serwis zawierający kilka artykułów o bliżej nieokreślonej treści,<br>
+                Zakładka "O projekcie" zawiera informacje o projekcie wraz z opisem zgodnym z wymaganiami projektu.<br>
+                Strony "Podstrona 1" oraz "Podstrona 2" mają symulować przykładowe artykuły i są wypełnione losowym tekstem i obrazkami.<br>
+                Podstrony oraz komentarze zawierają losowy tekst w języku angielskim ze względu na łatwość jego wygenerowania.<br>
+                Każda ze stron ma możliwość dodawania komentarzy, które są zapisywane w bazie danych.
+            </p>
+            <h1 id="pages">Dostępne strony</h1>
+            <h2 id="about"><a href="about.html">O projekcie</a></h2>
+            <p>Strona zawierająca informacje o projekcie i użytych w nim technologiach</p>
+            <h2 id="subpage1"><a href="subpage1.html">Podstrona1</a></h2>
+            <p>Podstrona nr 1 mówiąca o bliżej nieustalonym temacie</p>
+            <h2 id="subpage2"><a href="subpage2.html">Podstrona2</a></h2>
+            <p>Podstrona nr 2 mówiąca o bliżej nieustalonym temacie</p>
         </article>
         <div>
             <a class="comments-subcontainer" href="index/comments">

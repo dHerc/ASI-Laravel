@@ -10,67 +10,95 @@
 <button onclick="setLightMode()" class="change-mode-light" title="Wybierz tryb jasny">☼</button>
 <button onclick="setDarkMode()" class="change-mode-dark" title="Wybierz tryb ciemny">◑</button>
 <nav style="height: 50px" class="main-nav">
+    <button title="Przełącz menu boczne" class="toggle-side-nav" onclick="togglePageNav()">≡</button>
     <ul>
         <li><a href="index.html">Główna strona</a></li>
         <li class="selected"><a href="about.html">O projekcie</a></li>
+        <li><a href="subpage1.html">Podstrona1</a></li>
+        <li><a href="subpage2.html">Podstrona2</a></li>
     </ul>
 </nav>
-<button onclick="topFunction()" class="back-to-top" title="Wróć na początek">^</button>
+<nav class="side-nav" id="side-nav">
+    <div>
+        <a href="#used-tech" class="h1-nav">➤ Użyte technologie</a>
+        <a href="#html-5" class="h2-nav">➤ HTML 5</a>
+        <a href="#css-3" class="h2-nav">➤ CSS 3</a>
+        <a href="#php" class="h2-nav">➤ PHP</a>
+        <a href="#laravel" class="h2-nav">➤ Laravel</a>
+        <a href="#navigation" class="h1-nav">➤ Założenia nawigacji</a>
+        <a href="#requirements" class="h1-nav">➤ Spełnienie wymagań</a>
+        <a href="#used-required-tech" class="h2-nav">➤ Użyte technologie</a>
+        <a href="#valid-html" class="h2-nav">➤ Poprawność HTML/CSS</a>
+        <a href="#compatibility" class="h2-nav">➤ Kompatybilność</a>
+        <a href="#page-desc" class="h2-nav">➤ Opis serwisu</a>
+        <a href="#accessibility" class="h2-nav">➤ Dostępność dla<br> niepełnosprawnych</a>
+    </div>
+</nav>
+<a href="#beginning" class="back-to-top" title="Wróć na początek">^</a>
 <div class="main-container">
     <div>
+        <span id="beginning"></span>
         <article class="subcontainer">
-            <h1>Użyte technologie</h1>
+            <h1 id="used-tech">Użyte technologie</h1>
             <ul>
                 <li>
-                    <h2>HTML 5</h2>
+                    <h2 id="html-5">HTML 5</h2>
                     <p>
                         Strona wykorzystuje tagi dodane do HTML-a w wersji 5, takie jak nav czy article. <br>
                         Dodatkowo w celu zapisania preferencji użytkownika co do trybu ciemnego użyte zostało localStorage wprowadzone w tej samej wersji HTML-a
                     </p>
                 </li>
                 <li>
-                    <h2>CSS 3</h2>
+                    <h2 id="css-3">CSS 3</h2>
                     <p>
                         Strona wykorzystuje elementy stylów dodane do CSS w wersji 3 takie jak box-shadow czy selektor nth-child
                     </p>
                 </li>
                 <li>
-                    <h2>PHP</h2>
+                    <h2 id="php">PHP</h2>
                     <p>
                         Strona wykorzystuje skrypty PHP w celu generowania listy komentarzy na podstawie informacji z bazy danych oraz dodawania nowych komentarzy z bazy danych
                     </p>
                 </li>
                 <li>
-                    <h2>Laravel</h2>
+                    <h2 id="laravel">Laravel</h2>
                     <p>
                         Framework ten został użyty w celu ułatwienia obsługi zapytań, generowania strony z komentarzami oraz obsługi bazy danych, decyzja ta pozwala również na łatwe rozszerzenie serwisu o dodatkowe funkcjonalności
                     </p>
                 </li>
             </ul>
-            <h2>Założenia nawigacji</h2>
+            <h1 id="navigation">Założenia nawigacji</h1>
             <p>
                 Wszystkie główne podstrony dostępne są z poziomu paska nawigacji, co daje łatwy dostęp do dowolnej strony w dowolnym momencie, w wypadku stron zawierających dużo tekstu użytkownik ma możliwość powrotu na samą górę klikając jeden przycisk
             </p>
-            <h2>Spełnienie wymagań</h2>
+            <h1 id="requirements">Spełnienie wymagań</h1>
             <ul>
                 <li>
-                    <h2>Użyte technologie</h2>
+                    <h2 id="used-required-tech">Użyte technologie</h2>
                     <p>
                         Zgodnie z założeniami strona używa HTML 5, CSS 3, skryptów PHP po stronie serwera oraz bazy danych
                     </p>
-                    <h2>Poprawność HTML/CSS</h2>
+                </li>
+                <li>
+                    <h2 id="valid-html">Poprawność HTML/CSS</h2>
                     <p>
                         Pliki html oraz css sprawdzane były walidatorem, który nie zwrócił żadnych błędów
                     </p>
-                    <h2>Kompatybilność</h2>
+                </li>
+                <li>
+                    <h2 id="compatibility">Kompatybilność</h2>
                     <p>
                         Strona używa podstawowych elementów dostarczanych przez HTML 5 oraz CSS 3, została zaprojektowana w taki sposób aby ewentualne problemy z wyświetlaniem strony nie uniemożliwiały korzystania z niej, żaden ze skryptów JavaScript nie jest niezbędny do korzystania z serwisu, strona z komentarzami jest dynamicznie renderowana po stronie serwera, co sprawia, że jest ona niezależna od obsługi skryptów po stronie przeglądarki
                     </p>
-                    <h2>Strona poświęcona opisowi serwisu</h2>
+                </li>
+                <li>
+                    <h2 id="page-desc">Opis serwisu</h2>
                     <p>
                         Ta strona poświęcona jest opisowi całego serwisu
                     </p>
-                    <h2>Dostępność dla niepełnosprawnych</h2>
+                </li>
+                <li>
+                    <h2 id="accessibility">Dostępność dla niepełnosprawnych</h2>
                     <p>
                         Wszystkie obrazki mają teksty alternatywne, odpowiednie części strony używają odpowiednio dobranych tagów tak aby ułatwić używanie strony przez osoby niepełnosprawne, wtyczka <a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=pl">Lighthouse</a> dla wszystkich stron zwraca wynik 100 (maksimum) w sekcji Accessibility
                     </p>

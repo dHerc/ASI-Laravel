@@ -13,6 +13,8 @@
     <ul>
         <li @class(['selected' => str_contains(url()->current(), 'index')])><a href="../index.html">Główna strona</a></li>
         <li @class(['selected' => str_contains(url()->current(), 'about')])><a href="../about.html">O projekcie</a></li>
+        <li @class(['selected' => str_contains(url()->current(), 'subpage1')])><a href="../subpage1.html">Podstrona1</a></li>
+        <li @class(['selected' => str_contains(url()->current(), 'subpage2')])><a href="../subpage2.html">Podstrona2</a></li>
     </ul>
 </nav>
 <button onclick="topFunction()" class="back-to-top" title="Wróć na początek">^</button>
